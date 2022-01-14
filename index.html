@@ -15,7 +15,114 @@
 
 
   <body>
-    
+    <!-- As a heading -->
+    <nav class="navbar" id='main-navbar'>
+      <span class="navbar-brand m-auto h1">Weather</span>
+    </nav>
+
+    <div class='row'>
+      <!-- Search column -->
+      <div class='col-4 bg-light text-center'>
+
+        <!-- Search input and search button container -->
+        <div class='container border-bottom border-dark'>
+          <span class='h1' id='search-label'>Search for a City: </span>
+          <input class="form-control form-control-lg m-2" type="text" placeholder="Enter City...">
+          <button type='button' class='btn btn-info btn-lg btn-block m-2'>Search</button>
+        </div>
+
+        <div class='container' id='recent-search-list'>
+          <!-- Local stored search buttons will be found here -->
+          <button type='button' class='btn btn-secondary btn-lg btn-block m-2'>Austin</button>
+          <button type='button' class='btn btn-secondary btn-lg btn-block m-2'>Dallas</button>
+          <button type='button' class='btn btn-secondary btn-lg btn-block m-2'>San Francisco</button>
+          <button type='button' class='btn btn-secondary btn-lg btn-block m-2'>Houston</button>
+          <button type='button' class='btn btn-secondary btn-lg btn-block m-2'>San Antonio</button>
+        </div>
+      </div>
+  
+      <!-- Results column -->
+      <div class='col-8'>
+        <div class='row border border-dark'>
+          <ul class='list-unstyled m-2' id='results-list'>
+            <li class='mb-3' id='day-city-label'><span class='h1'>City (MM/DD/YYYY) icon </span></li>
+            <li id='day-temp-label'><span>Temp: 74.01 F</span></li>
+            <li id='day-wind-label'><span>Wind: 6.67 MPH </span></li>
+            <li id='day-humidity-label'><span>Humidity: 46% </span></li>
+            <li class='mb-3' id='day-uv-label'><span>UV Index: 0.47 </span></li>
+          </ul>
+        </div>
+
+        <div class='row bg-light'>
+          <span class='h2' id='search-label'>5-Day Forecast</span>
+        </div>
+
+        <!-- Weekly Forecast -->
+        <div class='row bg-primary' id='forecast-row'>
+          <div class="card text-white bg-dark mb-3 mt-3 dayCard" style="width: 18%; margin: auto 0.9%;">
+            <div class="card-body">
+              <ul class='list-unstyled'>
+                <li id='card-date'><h6 class="card-title">MM/DD/YYYY</h6></li>
+                <li id='card-icon'>icon</li>
+                <li id='card-temp'>temp</li>
+                <li id='card-wind'>wind</li>
+                <li id='card-humidity'>humidity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3 mt-3 dayCard" style="width: 18%; margin: auto 0.9%;">
+            <div class="card-body">
+              <ul class='list-unstyled'>
+                <li id='card-date'><h6 class="card-title">MM/DD/YYYY</h6></li>
+                <li id='card-icon'>icon</li>
+                <li id='card-temp'>temp</li>
+                <li id='card-wind'>wind</li>
+                <li id='card-humidity'>humidity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3 mt-3 dayCard" style="width: 18%; margin: auto 0.9%;">
+            <div class="card-body">
+              <ul class='list-unstyled'>
+                <li id='card-date'><h6 class="card-title">MM/DD/YYYY</h6></li>
+                <li id='card-icon'>icon</li>
+                <li id='card-temp'>temp</li>
+                <li id='card-wind'>wind</li>
+                <li id='card-humidity'>humidity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3 mt-3 dayCard" style="width: 18%; margin: auto 0.9%;">
+            <div class="card-body">
+              <ul class='list-unstyled'>
+                <li id='card-date'><h6 class="card-title">MM/DD/YYYY</h6></li>
+                <li id='card-icon'>icon</li>
+                <li id='card-temp'>temp</li>
+                <li id='card-wind'>wind</li>
+                <li id='card-humidity'>humidity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3 mt-3 dayCard" style="width: 18%; margin: auto 0.9%;">
+            <div class="card-body">
+              <ul class='list-unstyled'>
+                <li id='card-date'><h6 class="card-title">MM/DD/YYYY</h6></li>
+                <li id='card-icon'>icon</li>
+                <li id='card-temp'>temp</li>
+                <li id='card-wind'>wind</li>
+                <li id='card-humidity'>humidity</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
